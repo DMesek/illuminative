@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617745609223",
+    "project_id": "illuminative-eebf4",
+    "storage_bucket": "illuminative-eebf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617745609223:android:99c3254745456f1a3e70a2",
+        "android_client_info": {
+          "package_name": "com.example.illuminative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617745609223-5nfif18olgicvck6sal71gfvseoc9kv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLl9L6f_wnHL1WCTAVbpVFEOKx-Fxkri4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617745609223-5nfif18olgicvck6sal71gfvseoc9kv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
