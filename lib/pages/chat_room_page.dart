@@ -27,7 +27,7 @@ class ChatRoomPage extends StatelessWidget {
               child: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
                 stream: FirebaseFirestore.instance
                     .collection('messages')
-                    .orderBy('timestamp')
+                    .orderBy('timestamp', descending: true)
                     .snapshots(),
                 builder: (context, snapshot) {
                   if (snapshot.data == null) return Container();
@@ -40,6 +40,7 @@ class ChatRoomPage extends StatelessWidget {
                       )
                       .toList();
                   return ListView.builder(
+                    reverse: true,
                     itemBuilder: (_, index) => MessageTile(
                       isSender: messages[index].sender == username,
                       message: messages[index],
