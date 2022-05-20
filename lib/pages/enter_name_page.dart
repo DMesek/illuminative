@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:illuminative/pages/chat_room_page.dart';
 
 class EnterNamePage extends StatelessWidget {
   EnterNamePage({Key? key}) : super(key: key);
@@ -33,7 +34,16 @@ class EnterNamePage extends StatelessWidget {
             ),
             SizedBox(height: 50),
             InkWell(
-              onTap: onTapButton,
+              onTap: () {
+                final username = usernameController.text;
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ChatRoomPage(username),
+                  ),
+                );
+                print(username);
+              },
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.deepOrange,
@@ -58,10 +68,5 @@ class EnterNamePage extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  void onTapButton() {
-    final username = usernameController.text;
-    print(username);
   }
 }
