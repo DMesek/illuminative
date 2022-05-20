@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import '../utils/attendance_notifier.dart';
 
 class ChatRoomPage extends StatelessWidget {
-  ChatRoomPage({Key? key}) : super(key: key) {
+  final String username;
+  ChatRoomPage({
+    Key? key,
+    required this.username,
+  }) : super(key: key) {
     AttendanceNotifier.checkIn();
   }
 
@@ -11,7 +15,9 @@ class ChatRoomPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(),
+      body: Center(
+        child: Text(username),
+      ),
     );
   }
 }

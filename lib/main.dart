@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:illuminative/pages/enter_name_page.dart';
 
 import 'pages/chat_room_page.dart';
 import 'utils/firebase_config.dart';
@@ -18,10 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Illuminative Workshop',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: ChatRoomPage(),
+      home: EnterNamePage(),
     );
   }
 }
