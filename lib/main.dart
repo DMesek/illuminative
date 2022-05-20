@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: EnterNamePage(),
+      home: ChatRoomPage(
+        username: 'Dominik',
+      ),
     );
   }
 }
